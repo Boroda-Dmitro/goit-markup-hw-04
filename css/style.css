@@ -7,6 +7,7 @@
 /* колір фону сторінки #FFFFFF */
 /* футер колір тексту rgba(255, 255, 255, 0.6) */
 /* футер та герой колір фону #2F303A */
+/* основний колір іконок #AFB1B8 */
 
 :root {
   --primary-background-color: #ffffff;
@@ -20,6 +21,7 @@
   --black: #000000;
   --footer-link: rgba(255, 255, 255, 0.6);
   --title-font-weight: 700;
+  --primary-icon-color: #afb1b8;
 }
 
 body {
@@ -162,7 +164,7 @@ img {
 }
 
 .header-contaсts .link {
-  display: block;
+  display: inline-flex;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -171,6 +173,11 @@ img {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.header-contaсts-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 .header-contaсts .link:hover,
@@ -288,6 +295,59 @@ img {
   font-size: 14px;
   line-height: 1.71;
 }
+/* 
+.benefit-attention::before {
+  content: "";
+  display: block;
+  margin-bottom: 55px;
+background-image: url(../images/icon-attention.svg);
+height: 120px;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.benefit-watch::before {
+  content: "";
+  display: block;
+  margin-bottom: 55px;
+background-image: url(../images/icon-watch.svg);
+height: 120px;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.benefit-laptop::before {
+  content: "";
+  display: block;
+  margin-bottom: 55px;
+background-image: url(../images/icon-laptop.svg);
+height: 120px;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+}
+
+.benefit-astronaut::before {
+  content: "";
+  display: block;
+  margin-bottom: 55px;
+background-image: url(../images/icon-astronaut.svg);
+height: 120px;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+} */
+
+.benefit-icon {
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 55px;
+}
 
 .work {
   padding-top: 0;
@@ -318,6 +378,39 @@ img {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+.team-info .text {
+  margin-bottom: 16px;
+}
+
+.team-contacts {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+
+.team-contacts-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  /* background-color: blue; */
+  padding: 12px;
+  border-radius: 50%;
+  color: var(--primary-icon-color);
+}
+
+.team-icon {
+  fill: currentColor;
+}
+
+.team-contacts-link:hover,
+.team-contacts-link:focus {
+  background-color: var(--accent-color);
+  color: var(--white);
+}
+
 
 /* footer */
 
@@ -391,14 +484,13 @@ address .item:not(:last-child) {
 .examples .item {
   width: 370px;
   margin: 15px;
-  border: 1px solid #eeeeee;
-  
- }
+}
 
-/* .examples .item:hover,
+.examples .item:hover,
 .examples .item:focus {
-  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3)
-} */
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .examples .link {
   color: inherit;
@@ -406,6 +498,10 @@ address .item:not(:last-child) {
 
 .examples-info {
   padding: 20px 24px;
+
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .examples .title {
