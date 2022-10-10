@@ -397,12 +397,10 @@ background-position: center;
 }
 
 .customers-link {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+padding: 16px 32px;
   color: var(--primary-icon-color);
-  width: 170px;
-  height: 92px;
+max-width: 170px;
   border: 1px solid var(--primary-icon-color);
   border-radius: 4px;
 }
