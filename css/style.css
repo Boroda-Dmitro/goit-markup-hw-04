@@ -419,6 +419,7 @@ max-width: 170px;
 
 .footer-information {
   display: flex;
+  align-items: baseline;
   gap: 70px;
 }
 
@@ -461,7 +462,7 @@ address .item:not(:last-child) {
 
 .portfolio-filter {
   display: flex;
-  margin-bottom: 50px;
+   margin-bottom: 50px;
   justify-content: center;
 }
 
@@ -566,3 +567,4 @@ address .item:not(:last-child) {
   background-color: var(--accent-color);
   color: var(--white);
 }
+
