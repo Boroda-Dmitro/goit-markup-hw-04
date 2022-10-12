@@ -267,17 +267,21 @@ img {
   margin-bottom: 50px;
 }
 
-/* benefit */
-
-.benefits,
-.team {
-  background-color: var(--main-background-color);
-}
-
 .benefits .list,
 .work .list,
 .team .list {
   display: flex;
+}
+
+.svg-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-color: var(--team-background-color);
 }
 
 .benefits .item:not(:last-child),
@@ -343,14 +347,10 @@ background-repeat: no-repeat;
 background-position: center;
 } */
 
-
 .benefit-icon {
   display: block;
   width: 70px;
   height: 70px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 55px;
 }
 
 /* work */
@@ -363,13 +363,13 @@ background-position: center;
 
 .team {
   background-color: var(--team-background-color);
-
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
 }
 
 .team .item {
+  background-color: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -403,31 +403,21 @@ background-position: center;
   flex-wrap: wrap;
 }
 
-.customers .item {
+.customers-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: calc((100% - 150px) / 6);
+  width: 170px;
   height: 92px;
+  color: var(--primary-icon-color);
   border: 1px solid var(--primary-icon-color);
   border-radius: 4px;
-  color: var(--primary-icon-color);
 }
 
-.customers-link {
-  max-width: 100%;
-  max-height: 100%;
-  color: var(--primary-icon-color);
-}
-
-.customers .item:hover,
-.customers .item:focus {
-    border: 1px solid var(--accent-color);
-}
-
-.customers .item:hover .customers-link,
-.customers .item:focus .customers-link {
+.customers .customers-link:hover,
+.customers .customers-link:focus {
   color: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .customers-icon {
@@ -487,8 +477,7 @@ address .item:not(:last-child) {
 .portfolio-filter .bnt {
   min-width: 73px;
   padding: 6px 25px;
-  color: var(--title-text-color);
-  background-color: #f5f5f5;
+  border-radius: 4px;
   border: 0;
 
   font-family: inherit;
@@ -496,6 +485,9 @@ address .item:not(:last-child) {
   font-size: 16px;
   line-height: 1.62;
   cursor: pointer;
+
+  color: var(--title-text-color);
+  background-color: #f5f4f4;
 }
 
 .portfolio-filter .item:not(:last-child) {
@@ -561,7 +553,7 @@ address .item:not(:last-child) {
 .social-networks {
   display: flex;
   justify-content: center;
-    gap: 10px;
+  gap: 10px;
 }
 
 .social-networks-item {
